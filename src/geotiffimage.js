@@ -655,13 +655,13 @@ class GeoTIFFImage {
     if (modelPixelScale) {
       return [
         modelPixelScale[0],
-        modelPixelScale[1],
+        -modelPixelScale[1],
         modelPixelScale[2],
       ];
     } else if (modelTransformation) {
       return [
         modelTransformation[0],
-        modelTransformation[5],
+        -modelTransformation[5],
         modelTransformation[10],
       ];
     }

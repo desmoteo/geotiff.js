@@ -661,8 +661,8 @@ class GeoTIFFImage {
     } else if (modelTransformation) {
       return [
         modelTransformation[0],
-        -modelTransformation[5],
-        modelTransformation[10],
+        modelTransformation[5],
+        -modelTransformation[10],
       ];
     }
 

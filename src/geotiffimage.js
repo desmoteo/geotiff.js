@@ -634,7 +634,7 @@ class GeoTIFFImage {
       return [
         modelTransformation[3],
         modelTransformation[7],
-        modelTransformation[11],
+        -modelTransformation[11],
       ];
     }
     throw new Error('The image does not have an affine transformation.');
@@ -662,7 +662,7 @@ class GeoTIFFImage {
       return [
         modelTransformation[0],
         modelTransformation[5],
-        -modelTransformation[10],
+        modelTransformation[10],
       ];
     }
 

@@ -632,7 +632,7 @@ class GeoTIFFImage {
       ];
     } else if (modelTransformation) {
       return [
-        modelTransformation[3],
+        -modelTransformation[3],
         -modelTransformation[7],
         modelTransformation[11],
       ];
